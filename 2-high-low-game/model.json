@@ -1,0 +1,80 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "high low game",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "HintIntent",
+                    "slots": [
+                        {
+                            "name": "hint",
+                            "type": "HINT"
+                        }
+                    ],
+                    "samples": [
+                        "{hint}"
+                    ]
+                },
+                {
+                    "name": "CorrectIntent",
+                    "slots": [],
+                    "samples": [
+                        "correct"
+                    ]
+                },
+                {
+                    "name": "StartIntent",
+                    "slots": [],
+                    "samples": [
+                        "start"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "HINT",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "low",
+                                "synonyms": [
+                                    "too low",
+                                    "lower"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "high",
+                                "synonyms": [
+                                    "too high",
+                                    "higher"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

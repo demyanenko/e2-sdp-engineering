@@ -1,0 +1,98 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "artistic joker",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "TellAJokeIntent",
+                    "slots": [],
+                    "samples": [
+                        "simple one",
+                        "simple joke",
+                        "tell a joke",
+                        "tell me a joke"
+                    ]
+                },
+                {
+                    "name": "WhisperAJokeIntent",
+                    "slots": [],
+                    "samples": [
+                        "whisper",
+                        "whisper me a joke"
+                    ]
+                },
+                {
+                    "name": "ModifiedJokeIntent",
+                    "slots": [
+                        {
+                            "name": "modifier",
+                            "type": "MODIFIER"
+                        }
+                    ],
+                    "samples": [
+                        "{modifier} one",
+                        "{modifier} joke",
+                        "tell me a {modifier} joke"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "MODIFIER",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "low"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "high"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "quiet"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "loud"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "slow"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "quick"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

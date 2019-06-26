@@ -1,0 +1,130 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "guitar tuner",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "PlayNoteIntent",
+                    "slots": [
+                        {
+                            "name": "note",
+                            "type": "NOTE"
+                        }
+                    ],
+                    "samples": [
+                        "give me an {note}",
+                        "let's hear an {note}",
+                        "play me a {note}",
+                        "play a {note}"
+                    ]
+                },
+                {
+                    "name": "SpecifyPitchIntent",
+                    "slots": [
+                        {
+                            "name": "pitch",
+                            "type": "PITCH"
+                        }
+                    ],
+                    "samples": [
+                        "{pitch}"
+                    ]
+                },
+                {
+                    "name": "PlayNoteWithPitchIntent",
+                    "slots": [
+                        {
+                            "name": "pitch",
+                            "type": "PITCH"
+                        },
+                        {
+                            "name": "note",
+                            "type": "NOTE"
+                        }
+                    ],
+                    "samples": [
+                        "play a {pitch} {note}",
+                        "play me a {pitch} {note}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "NOTE",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "G"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "F"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "C"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "B"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "A"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "D"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "E"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "PITCH",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "high"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "low"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
