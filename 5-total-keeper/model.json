@@ -1,0 +1,50 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "total keeper",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AddIntent",
+                    "slots": [
+                        {
+                            "name": "delta",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "add {delta}"
+                    ]
+                },
+                {
+                    "name": "ClearIntent",
+                    "slots": [],
+                    "samples": [
+                        "clear total",
+                        "clear"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
